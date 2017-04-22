@@ -1,5 +1,6 @@
 .add-message {
     min-width: 320px;
+    height: 5vh;
 }
 
 .add-message input, .add-message button {

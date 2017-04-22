@@ -19,6 +19,8 @@ export let state = initialState;
 export function addMessage() {
     saveMessage();
     state = {...state, addMessage: {...state.addMessage, message: ''}};
+    const objDiv = document.getElementById("messageList");
+    objDiv.scrollTop = objDiv.scrollHeight;
 }
 
 export function inputChanged(event) {
