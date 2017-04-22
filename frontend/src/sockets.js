@@ -2,8 +2,9 @@ import SockJs from "sockjs-client";
 import Stomp from "stompjs";
 import * as PubSub from "pubsub-js";
 import {MESSAGE_ADDED} from "./logic";
+import {homepage} from "../package.json";
 
-const hostname = "http://localhost:8080";
+const hostname = (process.env.NODE_ENV === "production" ? homepage : "http://localhost:8080");
 
 function createSocketConnection() {
     const socket = new SockJs(hostname + "/websocket");
