@@ -8,8 +8,8 @@ const MessageList = ({messages}) => (
             {messages.map((message, i) => (
                 <li key={i}>
                     <div className="username">
-                        <span>{message.username}</span>
                         <span className="timestamp">{moment(message.timestamp).format("HH:mm")}</span>
+                        <span>{message.username}</span>
                     </div>
                     <div className="message">{message.message}</div>
                 </li>)

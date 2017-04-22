@@ -17,7 +17,7 @@ const initialState = {
         email: '',
         fullName: '',
         gender: 'Other',
-        complete: false
+        complete: true
     },
     messages: [{
         username: 'Chattler',

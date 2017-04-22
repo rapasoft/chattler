@@ -44,14 +44,14 @@ export default class App extends React.Component {
                     inputChanged={inputChanged}
                 />}
                 {state.profile.complete && <MessageList messages={state.messages}/>}
-                {!state.profile.complete && <CreateProfile
+                {/*!state.profile.complete && <CreateProfile
                     username={state.profile.username}
                     email={state.profile.email}
                     fullName={state.profile.fullName}
                     gender={state.profile.gender}
                     createProfile={completeProfile}
                     inputChanged={inputChanged}
-                />}
+                />*/}
 
             </div>
         </div>);
