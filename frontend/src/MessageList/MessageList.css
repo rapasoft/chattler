@@ -1,0 +1,43 @@
+.message-list {
+    width: 95%;
+    margin: 1em auto;
+    text-align: left;
+}
+.message-list ul {
+    margin-left: -3em;
+    list-style-type: none;
+    display: table;
+    table-layout: fixed;
+    width: 90%;
+    border-spacing: 5px;
+}
+.message-list ul li {
+    display: table-row;
+}
+.message-list ul li .username {
+    display: table-cell;
+    width: 8em;
+    overflow:hidden;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    font-weight: 700;
+}
+.message-list ul li .message {
+    display: table-cell;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 640px){
+    .message-list ul {
+        width: 100%;
+        margin-left: -3em;
+    }
+    .message-list ul li .username {
+        display: table-row;
+        width: 100%;
+    }
+    .message-list ul li .message {
+        width: 100%;
+        display: table-row;
+    }
+}
