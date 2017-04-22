@@ -1,13 +1,7 @@
 .message-list {
     text-align: left;
     overflow-y: hidden;
-    position: fixed;
     padding-left: 1em;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 78%;
-    padding-bottom: 40px;
 }
 .message-list ul {
     margin-left: -3em;
@@ -31,6 +25,13 @@
 .message-list ul li .message {
     display: table-cell;
     word-wrap: break-word;
+}
+.message-list .timestamp {
+    font-size: 0.6em;
+    margin-left: 1em;
+}
+.message-list .timestamp:before {
+    content: '🕒';
 }
 
 @media screen and (max-width: 640px){

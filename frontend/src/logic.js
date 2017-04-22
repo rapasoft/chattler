@@ -31,7 +31,7 @@ export function inputChanged(event) {
 export function updateMessages(message) {
     state = {
         ...state,
-        messages: [...state.messages, message],
+        messages: [...state.messages, message].reverse(),
     };
     PubSub.publish(MESSAGE_RECEIVED);
 }
