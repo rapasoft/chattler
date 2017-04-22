@@ -1,0 +1,30 @@
+.add-message {
+    min-width: 320px;
+}
+
+.add-message input, .add-message button {
+    font-size: 2em;
+}
+
+.add-message .username, .add-message .message {
+    border: none;
+    border-bottom: 1px solid darkgrey;
+    margin: 0.5em;
+}
+.add-message .username {
+    width: 20%;
+}
+.add-message .message {
+    width: 60%;
+}
+.add-message .add-button {
+    border: none;
+    background: none;
+    width: 10%;
+}
+
+@media screen and (max-width: 640px){
+    .add-message input, .add-message button {
+        font-size: 1em;
+    }
+}
