@@ -12,5 +12,11 @@ export function saveMessage() {
         },
         body,
         credentials: 'include'
-    })
+    }).catch((error) => {
+            return {
+                message: "Oops, there's been an error while sending your message.",
+                username: "Chattler"
+            }
+        }
+    )
 }

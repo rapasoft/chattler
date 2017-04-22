@@ -32,6 +32,5 @@ export function updateMessages(message) {
         ...state,
         messages: [...state.messages, message],
     };
-    console.log(state);
     PubSub.publish(MESSAGE_RECEIVED);
 }
