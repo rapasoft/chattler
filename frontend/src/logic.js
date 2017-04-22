@@ -11,20 +11,19 @@ const initialState = {
         username: '',
         message: ''
     },
-    messages: [{username: 'Chattler', message: 'Welcome to your friendly neighbourhood chat! 👋'}],
+    messages: [{username: 'Chattler', message: 'Hi there! 👋 Welcome to Itera Chattler!'}],
 };
 
 export let state = initialState;
 
 export function addMessage() {
-    saveMessage().then(() => {
-        state = {...state, addMessage: {...state.addMessage, message: ''}};
-    })
+    saveMessage();
+    state = {...state, addMessage: {...state.addMessage, message: ''}};
 }
 
 export function inputChanged(event) {
     set(state, event.target.name, event.target.value);
-    PubSub.publish(INPUT_CHANGED);
+    PubSub.publishSync(INPUT_CHANGED);
 }
 
 export function updateMessages(message) {

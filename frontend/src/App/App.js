@@ -23,7 +23,7 @@ export default class App extends React.Component {
     render() {
         return (<div className="App">
             <div className="App-header">
-                <span className="App-intro">Chattler</span>
+                <span className="App-intro">Itera Chattler</span>
             </div>
             <div>
                 <AddMessage
