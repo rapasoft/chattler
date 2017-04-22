@@ -3,8 +3,7 @@ import "./AddMessage.css";
 
 const AddMessage = ({username, message, addMessage, inputChanged}) => (
     <div className="add-message">
-        <input name="addMessage.username" value={username} className="username" required
-               type="text" placeholder="Name" onChange={inputChanged}/>
+        <input className="username" value={username} disabled={true}/>
         <input name="addMessage.message" value={message} className="message"
                type="text" placeholder="Message" onChange={inputChanged}
                onKeyDown={(e) => e.key === "Enter" ? addMessage() : ""}/>
